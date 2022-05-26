@@ -1,6 +1,7 @@
 #include <iostream>
 using namespace std;
-#include "video.h"
+#include "player.h"
+#include "os.h"
 
 int main() {
 	//在Windows操作系统上播放 demo.rmvb 视频文件

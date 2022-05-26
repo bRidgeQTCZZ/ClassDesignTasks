@@ -1,6 +1,7 @@
 #include <iostream>
 using namespace std;
-#include "video.h"
+#include "player.h"
+#include "os.h"
 
 void RMVB_Player::Play(string fileName) {
 	mOS->Func(); 
@@ -15,12 +16,4 @@ void MPG_Player::Play(string fileName) {
 void AVI_Player::Play(string fileName) {
 	mOS->Func();
 	/*AVI²¥·Å*/
-}
-
-void WinOS::Func() {
-	/*ÂÔ*/
-}
-
-void LinuxOS::Func() {
-	/*ÂÔ*/
 }
