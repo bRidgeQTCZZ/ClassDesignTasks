@@ -11,13 +11,13 @@ public:
 class M : public IMatrix {
 public:
 	M(int n[][2]);
-	M(IMatrix* m);
+	M(IMatrix* m[][2]);
 	virtual ~M() {}
-	virtual void Turn();
-	virtual void Transform();
+	virtual void Turn(IMatrix* matrix);
+	virtual void Transform(IMatrix* matrix);
 protected:
 	int mNums[2][2] = { 0 };
-	IMatrix* m;
+	IMatrix* mMatrix[2][2] = { nullptr };
 };
 
 #endif // !MATRIX_H

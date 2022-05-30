@@ -17,8 +17,8 @@ protected:
 	static string FB[2];
 	static enum LMIndex { SEA = 0, AIR, LAND };
 	static enum FBIndex { SUBSONIC = 0, SUPERSONIC = 0 };
-	LMIndex lm_idx;
-	FBIndex fb_idx;
+	LMIndex lm_idx = (LMIndex)0;
+	FBIndex fb_idx = (FBIndex)0;
 };
 
 string Missile::LM[3] = {
